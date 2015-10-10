@@ -7,7 +7,7 @@ subset$datetime <- strptime(paste(subset$Date, subset$Time), format = "%Y-%m-%d 
 png(file = "plot4.png", width = 480, height = 480)
 par(mfcol = c(2,2))
 
-plot(subset$datetime, subset$Global_active_power, type="n", xlab = "", ylab = "Global active power (kilowatts)", main = "")
+plot(subset$datetime, subset$Global_active_power, type="n", xlab = "", ylab = "Global active power", main = "")
 lines(subset$datetime, subset$Global_active_power)
 
 plot(subset$datetime, subset$Sub_metering_1, type="n", xlab = "", ylab = "Energy sub metering", main = "")
